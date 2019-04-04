@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Светлана Дяченко](https://up.htmlacademy.ru/adaptive/16/user/479245).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Удод](https://htmlacademy.ru/profile/id523387).
 
 ---
 
