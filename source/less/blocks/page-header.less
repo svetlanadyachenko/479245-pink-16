@@ -3,18 +3,30 @@
 }
 
 .page-header__wrapper {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-    background-color: @bgcolor;
+    background-color: @primary-color;
   }
 
   .page-header__wrapper {
-    width: 768px;
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: @primary-color;
+  }
+
+  .page-header__wrapper {
+    width: @desktop-width;
     margin: 0 auto;
     padding: 0;
   }
