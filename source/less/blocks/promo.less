@@ -1,17 +1,27 @@
 .promo {
   position: relative;
-  width: 320px;
-  height: 462px;
+  width: @mobile-width;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 320px 462px;
+  // временно для сетки
+  height: 462px;
 }
 
 .promo__image {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 260px;
+  display: block;
+}
+
+.promo__image-tablet {
+  display: none;
+}
+
+.promo__image-desktop {
+  display: none;
 }
 
 .promo__title {
@@ -25,4 +35,86 @@
   line-height: normal;
   text-align: center;
   color: @primary-color;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+    width: @tablet-width;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 660px 729px;
+    // временно для сетки
+    height: 729px;
+  }
+
+  .promo__image {
+    display: none;
+  }
+
+  .promo__image-tablet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  .promo__image-desktop {
+    display: none;
+  }
+
+  .promo__title {
+    margin: 0;
+    padding-top: 36px;
+    padding-left: 46px;
+    padding-right: 46px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    color: @primary-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    position: relative;
+    width: @desktop-width;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1200px 853px;
+    // временно для сетки
+    // height: 853px;
+  }
+
+  .promo__image {
+    display: none;
+  }
+
+  .promo__image-tablet {
+    display: none;
+  }
+
+  .promo__image-desktop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  .promo__title {
+    margin: 0;
+    padding-top: 36px;
+    padding-left: 46px;
+    padding-right: 46px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    color: @primary-color;
+  }
 }
