@@ -1,9 +1,21 @@
 .page-header {
-  background-color: @bgcolor;
+  background-color: @primary-color;
 }
 
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background-color: @bgcolor;
+  }
+
+  .page-header__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
