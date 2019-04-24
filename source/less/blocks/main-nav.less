@@ -4,8 +4,7 @@
 
 .main-nav__list {
   width: @mobile-width;
-  margin: 0;
-  padding: 0;
+  .list-reset();
 }
 
 .main-nav__item {
@@ -16,7 +15,6 @@
   box-sizing: border-box;
   padding-top: 18px;
   padding-bottom: 18px;
-  list-style: none;
   text-align: center;
   box-shadow: 0 1px 0 0 @black-three, inset 0 1px 0 0 @white-15;
 }
