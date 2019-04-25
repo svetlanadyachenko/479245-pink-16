@@ -1,0 +1,124 @@
+.effects {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effects {
+    display: block;
+    width: @tablet-width;
+    margin: 0;
+    padding: 0;
+    padding-top: 59px;
+    background-color: @primary-color;
+  }
+
+  .effects__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .effects__image {
+    display: block;
+    width: 238px;
+    height: 276px;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 75px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 149.5px;
+    text-align: center;
+    color: @contrast-color;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 18px 55px, center;
+    background-size: 202px 202px, 238px 276px;
+  }
+
+  .effects__text {
+    display: block;
+    width: 296px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .effects__title {
+    width: 168px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: @black-three;
+    text-align: left;
+  }
+
+  .effects__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @text-color;
+    text-align: left;
+  }
+
+  .effects__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @contrast-color;
+    text-align: left;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effects {
+    display: block;
+    width: @desktop-width;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 73px;
+    padding-left: 131px;
+    padding-right: 179px;
+    padding-bottom: 67px;
+    background-color: @bg-blue;
+  }
+
+  .effects__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .effects__image {
+    display: block;
+    width: 298px;
+    height: 345px;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 95px;
+    font-size: 120px;
+    line-height: 187px;
+    background-position: 22px 69px, center;
+    background-size: 253px 253px, 298px 345px;
+  }
+
+  .effects__text {
+    width: 525px;
+  }
+
+  .effects__title {
+    width: 500px;
+    line-height: 30px;
+  }
+
+  .effects__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effects__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
