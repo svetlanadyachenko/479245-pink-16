@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #283645;
+  color: @text-color;
   text-align: left;
 }
 
@@ -22,4 +22,27 @@
   display: block;
   width: 27px;
   height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 132px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .developer {
+    width: 157px;
+  }
+
+  .developer__text {
+    width: 111px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

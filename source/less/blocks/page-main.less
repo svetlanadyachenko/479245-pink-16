@@ -1,9 +1,33 @@
 .page-main {
-  background-color: @bgcolor;
+  background-color: @primary-color;
 }
 
 .page-main__wrapper {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    background-color: @primary-color;
+  }
+
+  .page-main__wrapper {
+    width: @tablet-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    background-color: @primary-color;
+  }
+
+  .page-main__wrapper {
+    width: @desktop-width;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

@@ -1,24 +1,34 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  align-items: center;
+  width: @mobile-width;
   margin-bottom: 1px;
   box-sizing: border-box;
   padding-top: 22px;
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 19px;
+  background-color: @bgcolor;
   box-shadow: 0 1px 0 0 @black-three;
 }
 
 .main-header__logo {
-  color: #ffffff;
+  color: @primary-color;
 }
 
 .main-header__logo-image {
   display: block;
   width: 74px;
   height: 23px;
+}
+
+.main-header__logo-image-tablet {
+  display: none;
+}
+
+.main-header__logo-image-desktop {
+  display: none;
 }
 
 .main-header__toggle {
@@ -28,4 +38,46 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-color: @bgcolor;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: @tablet-width;
+  }
+
+  .main-header__logo-image {
+    display: none;
+  }
+
+  .main-header__logo-image-tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: @desktop-width;
+    padding-top: 27px;
+    padding-bottom: 43px;
+    padding-left: 130px;
+    padding-right: 129px;
+    background-color: @header-opacity-color;
+    box-shadow: none;
+  }
+
+  .main-header__logo-image-tablet {
+    display: none;
+  }
+
+  .main-header__logo-image-desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
 }

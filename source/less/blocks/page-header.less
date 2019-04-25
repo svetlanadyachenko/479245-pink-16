@@ -1,9 +1,29 @@
 .page-header {
-  background-color: @bgcolor;
+  background-color: @primary-color;
 }
 
 .page-header__wrapper {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .page-header__wrapper {
+    width: @desktop-width;
+  }
 }

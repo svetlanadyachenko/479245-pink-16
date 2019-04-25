@@ -11,6 +11,8 @@
         <section class="main-header">
           <a class="main-header__logo" href="#">
             <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+            <img class="main-header__logo-image-tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Pink">
+            <img class="main-header__logo-image-desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Pink">
           </a>
           <button class="main-header__toggle" type="button"></button>
         </section>
@@ -26,7 +28,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link main-nav__link--last" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -36,8 +38,8 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Мобильное приложение Pink для раскрашивания серых будней в розовый цвет</h1>
         <section class="promo">
-          <h2 class="visually-hidden">Приложение Pink в действии</h2>
-          <img class="promo__image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Телефон в руке">
+          <h2 class="promo__title promo__title--index">Взгляните на жизнь иначе!</h2>
+          <span class="promo__phone-image"></span>
         </section>
         <section class="download">
           <h2 class="visually-hidden">Скачать приложение Pink для вашего устройства</h2>
@@ -65,26 +67,70 @@
           <h2 class="visually-hidden">Преимущества нашего приложения</h2>
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text advantages__text--bottom">Нам есть, что вам предложить!</p>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона">
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <span class="advantages__item-first"></span>
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <span class="advantages__item-second"></span>
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <span class="advantages__item-third"></span>
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <span class="advantages__image"></span>
+          </div>
+        </section>
+        <section class="effects">
+          <div class="effects__wrapper">
+            <span class="effects__image">24</span>
+            <div class="effects__text">
+              <h3 class="effects__title">Эффект на 24 часа!</h3>
+              <p class="effects__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="effects__link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип приложения Pink">
+          <img class="page-footer__logo-image-desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="Логотип приложения Pink">
+        </a>
+        <section class="social-nav">
+          <ul class="social-nav__list">
+            <li class="social-nav__item">
+              <a class="social-nav__link social-nav__link--twitter" href="#" aria-label="Приложение Pink в Twitter">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link social-nav__link--facebook" href="#" aria-label="Приложение Pink на Facebook">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-nav__item">
+              <a class="social-nav__link social-nav__link--youtube" href="#" aria-label="Приложение Pink на YouTube">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="developer">
+          <p class="developer__text">Разработано</p>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="developer__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </section>
       </div>
     </footer>
   </body>
