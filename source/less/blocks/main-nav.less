@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: @bgcolor;
+  background-color: @bg-color;
 }
 
 .main-nav__list {
@@ -41,13 +41,13 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    width: 660px;
+    margin-top: -65px;
+    margin-left: 450px;
     background-color: transparent;
   }
 
   .main-nav__list {
-    position: absolute;
-    top: 45px;
-    left: 450px;
     display: flex;
     justify-content: space-between;
     align-items: center;
