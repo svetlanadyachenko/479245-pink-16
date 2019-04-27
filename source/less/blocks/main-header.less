@@ -38,6 +38,22 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-color: @bg-color;
   border: none;
+
+  &:hover,
+  &:active {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+    background-color: @bg-color;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+    background-color: @bg-color;
+    opacity: 0.3;
+    border: none;
+    outline: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
