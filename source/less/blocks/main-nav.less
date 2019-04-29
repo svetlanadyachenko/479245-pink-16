@@ -27,6 +27,14 @@
   color: @primary-color;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: @contrast-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -69,6 +77,29 @@
     line-height: 18px;
     text-align: left;
     text-transform: capitalize;
+
+    &--active {
+      border-bottom: 2px solid @primary-color;
+      padding-bottom: 4px;
+
+      &:hover {
+        border-bottom: 2px solid @contrast-color;
+      }
+
+      &:active {
+        border-bottom: 2px solid @primary-color;
+        opacity: 0.3;
+      }
+    }
+
+    &:hover {
+      color: @contrast-color;
+    }
+
+    &:active {
+      color: @primary-color;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__link--last {

@@ -24,6 +24,15 @@
   text-decoration: none;
   border: 3px solid @primary-color;
   border-radius: 25px;
+
+  &:hover {
+    color: @contrast-color;
+    background-color: @primary-color;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__list {
@@ -85,5 +94,9 @@
     margin-left: 130px;
     padding-top: 61px;
     padding-bottom: 125px;
+  }
+
+  .download__download-button {
+    font-size: 21px;
   }
 }

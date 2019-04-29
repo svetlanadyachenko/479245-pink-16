@@ -19,8 +19,17 @@
 
 .main-header__logo-image {
   display: block;
-  width: 74px;
+  width: 75px;
   height: 23px;
+
+  &:hover path {
+    fill: @contrast-color;
+  }
+
+  &:active path {
+    fill: @primary-color;
+    opacity: 0.3;
+  }
 }
 
 .main-header__logo-image-tablet {
@@ -32,27 +41,36 @@
 }
 
 .main-header__toggle {
-  display: block;
+  display: none;
   width: 24px;
   height: 24px;
-  background-image: url("../img/icon-menu-cross.svg");
   background-color: @bg-color;
   border: none;
+  outline: none;
 
-  &:hover,
-  &:active {
-    background-image: url("../img/icon-menu-cross-hover.svg");
-    background-color: @bg-color;
-    border: none;
-    outline: none;
+  &:hover path {
+    fill: @contrast-color;
   }
 
-  &:active {
-    background-image: url("../img/icon-menu-cross-hover.svg");
-    background-color: @bg-color;
+  &:active path {
     opacity: 0.3;
-    border: none;
-    outline: none;
+  }
+}
+
+.main-header__open-menu {
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: @bg-color;
+  border: none;
+  outline: none;
+
+  &:hover path {
+    fill: @contrast-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
   }
 }
 
@@ -69,6 +87,15 @@
     display: block;
     width: 147px;
     height: 40px;
+
+    &:hover path {
+      fill: @contrast-color;
+    }
+
+    &:active path {
+      fill: @primary-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -94,6 +121,10 @@
   }
 
   .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__open-menu {
     display: none;
   }
 }
