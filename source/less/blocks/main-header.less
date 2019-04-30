@@ -61,7 +61,7 @@
   display: none;
   width: 50px;
   height: 24px;
-  background-color: @bg-color;
+  background-color: transparent;
   border: none;
   outline: none;
 
@@ -95,50 +95,6 @@
     &:active path {
       fill: @primary-color;
       opacity: 0.3;
-    }
-  }
-}
-
-@media (max-width: @mob-tab-width-only) {
-  .main-header--closed {
-    .main-header__toggle-close {
-      display: none;
-    }
-
-    .main-header__toggle-open {
-      display: block;
-    }
-
-    .main-header__nav {
-      display: none;
-    }
-  }
-
-  .main-header--opened {
-    .main-header__toggle-close {
-      display: block;
-    }
-
-    .main-header__toggle-open {
-      display: none;
-    }
-
-    .main-header__nav {
-      display: block;
-    }
-  }
-
-  .main-header--nojs {
-    .main-header__toggle-close {
-      display: none;
-    }
-
-    .main-header__toggle-open {
-      display: none;
-    }
-
-    .main-header__nav {
-      display: block;
     }
   }
 }
