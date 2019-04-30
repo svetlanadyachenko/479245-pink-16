@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper main-header--opened main-header--nojs">
         <section class="main-header">
           <a class="main-header__logo" href="#">
             <svg class="main-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -53,7 +53,7 @@
             </svg>
           </button>
         </section>
-        <nav class="main-nav">
+        <nav class="main-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
@@ -170,5 +170,22 @@
         </section>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".main-header__wrapper");
+      var navToggleClose = document.querySelector(".main-header__toggle-close");
+      var navToggleOpen = document.querySelector(".main-header__toggle-open");
+
+      navMain.classList.remove("page-header--nojs");
+
+      navToggleClose.addEventListener("click", function(){
+        if (navMain.classList.contains("main-header--closed")) {
+          navMain.classList.remove("main-header--closed");
+          navMain.classList.add("main-header--opened");
+        } else {
+          navMain.classList.add("main-header--closed");
+          navmain.classList.remove("main-header--opened");
+        }
+      })
+    </script>
   </body>
 </html>
