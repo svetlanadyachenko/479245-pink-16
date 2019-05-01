@@ -4,7 +4,6 @@
   align-items: center;
   width: 132px;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 
 .developer__text {
@@ -19,9 +18,23 @@
 }
 
 .developer__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.developer__image {
+  width: 41px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+
+  &:hover path {
+    fill: @text-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -1,15 +1,12 @@
 .promo {
   display: flex;
   width: @mobile-width;
-  height: 462px;
   margin-top: -72px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover;
+  background-size: 320px 462px;
   background-color: @bg-color;
-  // временно для сетки
-  min-height: 462px;
 }
 
 .promo__title {
@@ -30,14 +27,22 @@
   display: none;
 }
 
+.promo__title--form {
+  margin-bottom: 45px;
+}
+
+.promo__title--photo {
+  margin-bottom: 61px;
+}
+
 .promo__phone-image {
   width: @mobile-width;
   height: 314px;
   margin: 0;
-  margin-top: 175px;
+  margin-top: 148px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 27px;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,11 +52,9 @@
     margin-top: -88px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -265px 0;
-    background-size: cover;
+    background-position: -265px -25px;
+    background-size: 1200px 729px;
     background-color: @bg-color;
-    // временно для сетки
-    min-height: 729px;
   }
 
   .promo__title {
@@ -66,6 +69,18 @@
     line-height: normal;
     text-align: center;
     color: @primary-color;
+  }
+
+  .promo__title--form {
+    width: 480px;
+    margin: 0 auto;
+    margin-bottom: 79px;
+  }
+
+  .promo__title--photo {
+    width: 348px;
+    margin: 0 auto;
+    margin-bottom: 111px;
   }
 
   .promo__title--index {
@@ -88,11 +103,10 @@
     height: 545px;
     margin: 0;
     margin-left: -260px;
-    margin-top: 178px;
+    margin-top: 176px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: -10px 0;
-    background-size: cover;
+    background-position: -15px -5px;
   }
 }
 
@@ -103,18 +117,25 @@
     margin-top: -112px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -682px 0;
-    background-size: cover;
+    background-position: -680px 30px;
+    background-size: 2560px 853px;
     background-color: @bg-color;
-    // временно для сетки
-    min-height: 853px;
   }
 
   .promo__title {
-    width: 750px;
-    margin-left: 232px;
+    margin: 0 auto;
     padding-top: 183px;
     font-size: 50px;
+  }
+
+  .promo__title--form {
+    width: 750px;
+    margin-bottom: 100px;
+  }
+
+  .promo__title--photo {
+    width: 348px;
+    margin-bottom: 111px;
   }
 
   .promo__title--index {
@@ -129,11 +150,10 @@
     height: 645px;
     margin: 0;
     margin-left: -250px;
-    margin-top: 190px;
+    margin-top: 209px;
     padding: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: cover;
   }
 }

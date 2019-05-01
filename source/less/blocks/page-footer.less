@@ -19,6 +19,18 @@
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 43px;
+
+  &:hover g path {
+    fill: @contrast-color;
+  }
+
+  &:active g path {
+    fill: @text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__logo-image-desktop {
