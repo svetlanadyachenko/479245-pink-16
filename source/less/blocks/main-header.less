@@ -5,10 +5,10 @@
   width: @mobile-width;
   margin-bottom: 1px;
   box-sizing: border-box;
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 25px;
   padding-left: 20px;
-  padding-right: 19px;
+  padding-right: 24px;
   background-color: @bg-color;
   box-shadow: 0 1px 0 0 @black-three;
 }
@@ -77,6 +77,9 @@
 @media (min-width: @tablet-width) {
   .main-header {
     width: @tablet-width;
+    box-sizing: border-box;
+    padding-top: 26px;
+    padding-bottom: 42px;
   }
 
   .main-header__logo-image {
@@ -96,6 +99,14 @@
       fill: @primary-color;
       opacity: 0.3;
     }
+  }
+
+  .main-header__toggle-close {
+    margin-top: 15px;
+  }
+
+  .main-header__toggle-open {
+    margin-top: 15px;
   }
 }
 
