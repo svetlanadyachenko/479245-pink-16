@@ -1,9 +1,8 @@
 .system-list {
   display: flex;
   justify-content: space-between;
-  width: 212px;
-  margin-top: 32px;
-  margin-bottom: 28px;
+  align-items: center;
+  width: 204px;
 }
 
 .system-list__item {
@@ -11,4 +10,16 @@
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.system-list__item:first-child {
+  margin-top: -4px;
+}
+
+.system-list__item:nth-child(2) {
+  margin-top: 3px;
+}
+
+.system-list__item:last-child {
+  margin-top: 4px;
 }

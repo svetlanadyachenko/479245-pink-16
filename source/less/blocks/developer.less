@@ -4,12 +4,13 @@
   align-items: center;
   width: 132px;
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 
 .developer__text {
   display: block;
   width: 86px;
+  margin-top: 13px;
+  margin-right: 10px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -19,9 +20,23 @@
 }
 
 .developer__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+.developer__image {
+  width: 41px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+
+  &:hover path {
+    fill: @text-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -29,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 132px;
+    width: 130px;
     margin: 0;
     padding: 0;
   }
@@ -37,7 +52,7 @@
 
 @media (min-width: @desktop-width) {
   .developer {
-    width: 157px;
+    width: 153px;
   }
 
   .developer__text {

@@ -14,11 +14,60 @@
   }
 }
 
+@media (max-width: @mob-tab-width-only) {
+  .page-header--closed {
+    .main-header__toggle-close {
+      display: none;
+    }
+
+    .main-header__toggle-open {
+      display: block;
+    }
+
+    .main-header__nav {
+      display: none;
+    }
+
+    .main-header {
+      position: relative;
+      background-color: @header-opacity-color;
+      box-shadow: none;
+      z-index: 1;
+    }
+  }
+
+  .page-header--opened {
+    .main-header__toggle-close {
+      display: block;
+    }
+
+    .main-header__toggle-open {
+      display: none;
+    }
+
+    .main-header__nav {
+      position: relative;
+    }
+  }
+
+  .page-header--nojs {
+    .main-header__toggle-close {
+      display: none;
+    }
+
+    .main-header__toggle-open {
+      display: none;
+    }
+
+    .main-header__nav {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-header {
-    position: absolute;
-    top: 0;
-    left: 75px;
+    position: relative;
     background-color: transparent;
     z-index: 1;
   }
