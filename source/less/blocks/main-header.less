@@ -129,5 +129,18 @@
     display: block;
     width: 147px;
     height: 40px;
+
+    &:hover {
+      .page-header__logo-image-color {
+        fill: @contrast-color;
+      }
+    }
+
+    &:active {
+      .page-header__logo-image-color {
+        fill: @primary-color;
+      }
+      opacity: 0.3;
+    }
   }
 }
