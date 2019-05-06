@@ -21,6 +21,12 @@
   display: block;
   width: 75px;
   height: 23px;
+}
+
+.main-header__logo-image-mobile {
+  display: block;
+  width: 75px;
+  height: 23px;
 
   &:hover path {
     fill: @contrast-color;
@@ -83,6 +89,12 @@
   }
 
   .main-header__logo-image {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-header__logo-image-mobile {
     display: none;
   }
 
@@ -99,6 +111,10 @@
       fill: @primary-color;
       opacity: 0.3;
     }
+  }
+
+  .main-header__logo-image-desktop {
+    display: none;
   }
 
   .main-header__toggle-close {
@@ -121,6 +137,16 @@
     box-shadow: none;
   }
 
+  .main-header__logo-image {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-header__logo-image-mobile {
+    display: none;
+  }
+
   .main-header__logo-image-tablet {
     display: none;
   }
@@ -129,5 +155,18 @@
     display: block;
     width: 147px;
     height: 40px;
+
+    &:hover {
+      .page-header__logo-image-color {
+        fill: @contrast-color;
+      }
+    }
+
+    &:active {
+      .page-header__logo-image-color {
+        fill: @primary-color;
+      }
+      opacity: 0.3;
+    }
   }
 }
