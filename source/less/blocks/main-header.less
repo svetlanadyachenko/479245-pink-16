@@ -28,13 +28,21 @@
   width: 75px;
   height: 23px;
 
-  &:hover path {
-    fill: @contrast-color;
+  .main-header__logo-word {
+    fill: @primary-color;
   }
 
-  &:active path {
-    fill: @primary-color;
-    opacity: 0.3;
+  &:hover {
+    .main-header__logo-word {
+      fill: @contrast-color;
+    }
+  }
+
+  &:active {
+    .main-header__logo-word {
+      fill: @primary-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -111,13 +119,39 @@
     width: 147px;
     height: 40px;
 
-    &:hover path {
-      fill: @contrast-color;
+    .main-header__logo-word {
+      fill: @primary-color;
     }
 
-    &:active path {
+    .main-header__logo-star {
+      display: none;
+    }
+
+    .main-header__logo-glasses {
+      display: block;
       fill: @primary-color;
-      opacity: 0.3;
+    }
+
+    &:hover {
+      .main-header__logo-word {
+        fill: @contrast-color;
+      }
+
+      .main-header__logo-glasses {
+        fill: @contrast-color;
+      }
+    }
+
+    &:active {
+      .main-header__logo-word {
+        fill: @primary-color;
+        opacity: 0.3;
+      }
+
+      .main-header__logo-glasses {
+        fill: @primary-color;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -164,17 +198,34 @@
     width: 147px;
     height: 40px;
 
+    .main-header__logo-word {
+      fill: @primary-color;
+    }
+
+    .main-header__logo-glasses {
+      fill: @primary-color;
+    }
+
     &:hover {
-      .page-header__logo-image-color {
+      .main-header__logo-word {
+        fill: @contrast-color;
+      }
+
+      .main-header__logo-glasses {
         fill: @contrast-color;
       }
     }
 
     &:active {
-      .page-header__logo-image-color {
+      .main-header__logo-word {
         fill: @primary-color;
+        opacity: 0.3;
       }
-      opacity: 0.3;
+
+      .main-header__logo-glasses {
+        fill: @primary-color;
+        opacity: 0.3;
+      }
     }
   }
 }
