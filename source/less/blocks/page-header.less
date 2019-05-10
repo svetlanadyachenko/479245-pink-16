@@ -65,9 +65,11 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @min-desktop-width) {
   .page-header {
     position: relative;
+    width: @desktop-width;
+    margin: 0 auto;
     background-color: transparent;
     z-index: 1;
   }
