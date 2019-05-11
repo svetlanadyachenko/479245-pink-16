@@ -114,6 +114,107 @@
       <section class="promo">
         <h2 class="promo__title promo__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </section>
+      <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="user-info">
+          <legend class="user-info__title--index">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</legend>
+          <legend class="user-info__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</legend>
+          <div class="user-info__list">
+            <p class="user-info__item">
+              <label class="user-info__label" for="surname">Фамилия:</label>
+              <input class="user-info__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </p>
+            <p class="user-info__item">
+              <label class="user-info__label" for="surname">Имя:</label>
+              <input class="user-info__input" type="text" name="surname" id="surname" placeholder="Введите ваше имя *">
+            </p>
+            <p class="user-info__item">
+              <label class="user-info__label" for="surname">Отчество:</label>
+              <input class="user-info__input" type="text" name="surname" id="surname" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="progress">
+          <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="progress__list">
+            <li class="progress__item">
+              <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
+              <input class="progress__input" type="checkbox" name="selfie" id="selfie" checked>
+            </li>
+            <li class="progress__item">
+              <label class="progress__label" for="suntan">Обгорел на пляже</label>
+              <input class="progress__input" type="checkbox" name="suntan" id="suntan" checked>
+            </li>
+            <li class="progress__item">
+              <label class="progress__label" for="norris">Видел Чака Норриса</label>
+              <input class="progress__input" type="checkbox" name="norris" id="norris">
+            </li>
+            <li class="progress__item">
+              <label class="progress__label" for="souvenir">Накупил сувениров</label>
+              <input class="progress__input" type="checkbox" name="souvenir" id="souvenir">
+            </li>
+            <li class="progress__item">
+              <label class="progress__label" for="tower">Удержал башню</label>
+              <input class="progress__input" type="checkbox" name="tower" id="tower" checked>
+            </li>
+            <li class="progress__item">
+              <label class="progress__label" for="hotel">Разгромил отель</label>
+              <input class="progress__input" type="checkbox" name="hotel" id="hotel">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="сontact-information">
+          <legend class="сontact-information__title">Контактная информация</legend>
+          <div class="сontact-information__list">
+            <p class="сontact-information__item">
+              <label class="сontact-information__label" for="phone-number">Номер телефона</label>
+              <input class="сontact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="сontact-information__item">
+              <label class="сontact-information__label" for="mail">Адрес почты</label>
+              <input class="сontact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="attachment">
+          <legend class="attachment__title">С каким приложением путешествовали?</legend>
+          <ul class="attachment__list">
+            <li class="attachment__item">
+              <label class="attachment__label" for="ios">Pink для iOS</label>
+              <input class="attachment__input" type="radio" name="attachment-use" id="ios" checked>
+            </li>
+            <li class="attachment__item">
+              <label class="attachment__label" for="android">Pink на Android</label>
+              <input class="attachment__input" type="radio" name="attachment-use" id="android">
+            </li>
+            <li class="attachment__item">
+              <label class="attachment__label" for="windows">Windows Phone</label>
+              <input class="attachment__input" type="radio" name="attachment-use" id="windows">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="emotions">
+          <legend class="emotions__title">Опишите свои эмоции</legend>
+            <textarea class="emotions__text" name="emotion" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+
+        <input class="competition-form-button" type="submit" value="Отправить форму">
+      </form>
+      <p>* - Обязательные поля</p>
+      <section class="mistake-window">
+        <h2 class="mistake-window__title"></h2>
+        <p class="mistake-window__text"></p>
+        <button class="mistake-window__button" type="button"></button>
+      </section>
+      <section class="application-sent">
+        <h2 class="application-sent__title"></h2>
+        <p class="application-sent__text"></p>
+        <button class="application-sent__button" type="button"></button>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
