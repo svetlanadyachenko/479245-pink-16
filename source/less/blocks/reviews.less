@@ -1,0 +1,32 @@
+.reviews {
+
+}
+.reviews-slider {
+
+  margin: 0 auto;
+  width: 56px;
+  height: 10px;
+}
+
+.reviews__slider-toggle {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  background-color: @text-color;
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    opacity: 1;
+    background-color: @primary-color;
+    border: 3px solid @text-color;
+  }
+}

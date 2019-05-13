@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+  display: block;
+  width: @mobile-width;
+  height: 645px;
+  margin-top: -445px;
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 445px, 0 0;
+  background-size: 320px auto, 320px auto;
+  background-color: @bg-blue;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 640px auto;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  top: 540px;
+  left: 142px;
+  display: block;
+  width: 36px;
+  height: 35px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

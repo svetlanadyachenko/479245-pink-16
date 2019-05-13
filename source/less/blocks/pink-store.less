@@ -1,0 +1,77 @@
+.pink-store {
+  position: relative;
+  z-index: 2;
+  width: @mobile-width;
+  background-color: @bg-blue;
+}
+
+.pink-store__list {
+  background-color: @primary-color;
+  border: 2px solid #e5e5e5;
+}
+
+.pink-store__tariff {
+  width: 276px;
+  height: 94px;
+  background-color: @text-color;
+  border: 2px solid @primary-color;
+}
+
+.pink-store__tariff-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: @primary-color;
+}
+
+.pink-store__tariff-price {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: @primary-color;
+}
+
+.pink-store__green-mark {
+  display: block;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pink-store__red-mark {
+  display: block;
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pink-store__slider-toggle {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  background-color: @text-color;
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    opacity: 1;
+    background-color: @primary-color;
+    border: 3px solid @text-color;
+  }
+}
