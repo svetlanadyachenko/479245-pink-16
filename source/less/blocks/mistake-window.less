@@ -63,3 +63,63 @@
     border: 2px solid @form-button-dark-color;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .mistake-window {
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 54px;
+  }
+
+  .mistake-window__title {
+    width: 260px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .mistake-window__text {
+    width: 300px;
+    margin-top: 44px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .mistake-window__button {
+    width: 296px;
+    margin-top: 44px;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .mistake-window {
+    width: 780px;
+    padding-top: 0;
+    padding-bottom: 55px;
+    background-color: @bg-blue;
+  }
+
+  .mistake-window__info {
+    display: block;
+    width: 780px;
+    margin: 0;
+    padding: 0;
+    padding-top: 51px;
+    padding-bottom: 62px;
+    background-color: @primary-color;
+  }
+
+  .mistake-window__title {
+    width: 347px;
+  }
+
+  .mistake-window__text {
+    width: 350px;
+    margin-top: 44px;
+  }
+
+  .mistake-window__button {
+    width: 296px;
+    margin-top: 49px;
+  }
+}

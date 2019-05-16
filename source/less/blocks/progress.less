@@ -75,8 +75,24 @@
   cursor: pointer;
 }
 
+.progress__input--checkbox:hover + .progress__label::before {
+  border: 2px solid @text-color;
+}
+
+.progress__input--checkbox:active + .progress__label::before {
+  border: 2px solid @contrast-color;
+}
+
 .progress__input--checkbox:checked + .progress__label::before {
   background-image: url("../img/input-icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.progress__input--checkbox:checked:hover + .progress__label::before {
+  border: 2px solid @text-color;
+}
+
+.progress__input--checkbox:checked:active + .progress__label::before {
+  border: 2px solid @contrast-color;
 }

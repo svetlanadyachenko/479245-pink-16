@@ -75,8 +75,24 @@
   cursor: pointer;
 }
 
+.attachment__input--radio:hover + .attachment__label::before {
+  border: 2px solid @text-color;
+}
+
+.attachment__input--radio:active + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
 .attachment__input--radio:checked + .attachment__label::before {
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.attachment__input--radio:checked:hover + .attachment__label::before {
+  border: 2px solid @text-color;
+}
+
+.attachment__input--radio:checked:active + .attachment__label::before {
+  border: 2px solid @contrast-color;
 }

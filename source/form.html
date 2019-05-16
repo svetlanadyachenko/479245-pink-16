@@ -162,16 +162,16 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="сontact-information">
-          <legend class="сontact-information__title">Контактная информация</legend>
-          <div class="сontact-information__list">
-            <p class="сontact-information__item">
-              <label class="сontact-information__label" for="phone-number">Номер телефона</label>
-              <input class="сontact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+        <fieldset class="contact-information">
+          <legend class="contact-information__title">Контактная информация</legend>
+          <div class="contact-information__list">
+            <p class="contact-information__item">
+              <label class="contact-information__label" for="phone-number">Номер телефона</label>
+              <input class="contact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
             </p>
-            <p class="сontact-information__item">
-              <label class="сontact-information__label" for="mail">Адрес почты</label>
-              <input class="сontact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
+            <p class="contact-information__item">
+              <label class="contact-information__label" for="mail">Адрес почты</label>
+              <input class="contact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
             </p>
           </div>
         </fieldset>
@@ -194,7 +194,7 @@
         </fieldset>
         <fieldset class="emotions">
           <legend class="emotions__title">Опишите свои эмоции</legend>
-          <textarea class="emotions__text" name="emotion" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="emotions__text" name="emotion" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <input class="competition-form__button" type="submit" value="Отправить форму">
         <small class="competition-form__required-fields">
@@ -202,8 +202,10 @@
         </small>
       </form>
       <section class="mistake-window">
-        <h2 class="mistake-window__title">Что-то пошло не так!</h2>
-        <p class="mistake-window__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="mistake-window__info">
+          <h2 class="mistake-window__title">Что-то пошло не так!</h2>
+          <p class="mistake-window__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
         <button class="mistake-window__button" type="button">ОК</button>
       </section>
       <section class="application-sent">
