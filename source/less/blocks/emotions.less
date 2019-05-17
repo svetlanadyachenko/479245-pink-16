@@ -29,7 +29,6 @@
   margin: 0 auto;
   margin-top: 19px;
   box-sizing: border-box;
-  padding: 0;
   padding-top: 23px;
   padding-bottom: 16px;
   padding-left: 19px;
@@ -60,5 +59,39 @@
   &:focus {
     border: 2px solid @contrast-color;
     outline: 2px solid transparent;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .emotions {
+    width: 616px;
+    margin: 0 auto;
+    margin-top: 69px;
+    padding: 0;
+    border: 2px solid @light-border-color;
+    background-color: @primary-color;
+  }
+
+  .emotions__title {
+    width: 210px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    background-color: @primary-color;
+  }
+
+  .emotions__text {
+    width: 500px;
+    min-height: 189px;
+    margin-top: 47px;
+    margin-bottom: 53px;
+    box-sizing: border-box;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 16px;
   }
 }

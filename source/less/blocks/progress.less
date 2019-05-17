@@ -96,3 +96,34 @@
 .progress__input--checkbox:checked:active + .progress__label::before {
   border: 2px solid @contrast-color;
 }
+
+@media (min-width: @tablet-width) {
+  .progress {
+    width: 616px;
+    margin: 0 auto;
+    margin-top: 69px;
+    padding: 0;
+    border: 2px solid @light-border-color;
+    background-color: @primary-color;
+  }
+
+  .progress__title {
+    display: block;
+    width: 400px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    color: @contrast-color;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @primary-color;
+  }
+
+  .progress__item {
+    margin-bottom: 63px;
+    margin-left: 68px;
+  }
+}

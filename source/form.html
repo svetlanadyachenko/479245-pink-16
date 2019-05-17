@@ -133,73 +133,79 @@
             </p>
           </div>
         </fieldset>
-        <fieldset class="progress">
-          <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="progress__list">
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked>
-              <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
-            </li>
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked>
-              <label class="progress__label" for="suntan">Обгорел на пляже</label>
-            </li>
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
-              <label class="progress__label" for="norris">Видел Чака Норриса</label>
-            </li>
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
-              <label class="progress__label" for="souvenir">Накупил сувениров</label>
-            </li>
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="progress__label" for="tower">Удержал башню</label>
-            </li>
-            <li class="progress__item">
-              <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="progress__label" for="hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contact-information">
-          <legend class="contact-information__title">Контактная информация</legend>
-          <div class="contact-information__list">
-            <p class="contact-information__item">
-              <label class="contact-information__label" for="phone-number">Номер телефона</label>
-              <input class="contact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="contact-information__item">
-              <label class="contact-information__label" for="mail">Адрес почты</label>
-              <input class="contact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="attachment">
-          <legend class="attachment__title">С каким приложением путешествовали?</legend>
-          <ul class="attachment__list">
-            <li class="attachment__item">
-              <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="ios" checked>
-              <label class="attachment__label" for="ios">Pink для iOS</label>
-            </li>
-            <li class="attachment__item">
-              <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="android">
-              <label class="attachment__label" for="android">Pink на Android</label>
-            </li>
-            <li class="attachment__item">
-              <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="windows">
-              <label class="attachment__label" for="windows">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="competition-form__wrapper">
+          <fieldset class="progress">
+            <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="progress__list">
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked>
+                <label class="progress__label" for="suntan">Обгорел на пляже</label>
+              </li>
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
+                <label class="progress__label" for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label class="progress__label" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label class="progress__label" for="tower">Удержал башню</label>
+              </li>
+              <li class="progress__item">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="progress__label" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contact-information">
+            <legend class="contact-information__title">Контактная информация</legend>
+            <div class="contact-information__list">
+              <p class="contact-information__item">
+                <label class="contact-information__label" for="phone-number">Номер телефона</label>
+                <input class="contact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+                <span class="contact-information__phone-image"></span>
+              </p>
+              <p class="contact-information__item">
+                <label class="contact-information__label" for="mail">Адрес почты</label>
+                <input class="contact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *">
+                <span class="contact-information__mail-image"></span>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="attachment">
+            <legend class="attachment__title">С каким приложением путешествовали?</legend>
+            <ul class="attachment__list">
+              <li class="attachment__item">
+                <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="ios" checked>
+                <label class="attachment__label" for="ios">Pink для iOS</label>
+              </li>
+              <li class="attachment__item">
+                <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="android">
+                <label class="attachment__label" for="android">Pink на Android</label>
+              </li>
+              <li class="attachment__item">
+                <input class="attachment__input attachment__input--radio" type="radio" name="attachment-use" id="windows">
+                <label class="attachment__label" for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="emotions">
           <legend class="emotions__title">Опишите свои эмоции</legend>
           <textarea class="emotions__text" name="emotion" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <input class="competition-form__button" type="submit" value="Отправить форму">
-        <small class="competition-form__required-fields">
-          <sup>*</sup> — Обязательные поля
-        </small>
+        <div class="competition-form__container">
+          <input class="competition-form__button" type="submit" value="Отправить форму">
+          <small class="competition-form__required-fields">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
       </form>
       <section class="mistake-window">
         <div class="mistake-window__info">

@@ -3,7 +3,6 @@
   width: @mobile-width;
   margin: 0;
   margin-top: 25px;
-  box-sizing: border-box;
   padding: 0;
   border: none;
   background-color: @bg-blue;
@@ -95,4 +94,35 @@
 
 .attachment__input--radio:checked:active + .attachment__label::before {
   border: 2px solid @contrast-color;
+}
+
+@media (min-width: @tablet-width) {
+  .attachment {
+    width: 616px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0;
+    border: 2px solid @light-border-color;
+    background-color: @primary-color;
+  }
+
+  .attachment__title {
+    display: block;
+    width: 330px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+    background-color: @primary-color;
+  }
+
+  .attachment__list {
+    .list-reset();
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    margin-left: 55px;
+  }
 }

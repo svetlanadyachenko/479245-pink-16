@@ -87,3 +87,53 @@
     outline: 2px solid transparent;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .user-info {
+    width: @tablet-width;
+    margin-top: 100px;
+  }
+
+  .user-info__title {
+    display: block;
+    width: 490px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    padding-bottom: 76px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: @text-color;
+  }
+
+  .user-info__title--min {
+    display: none;
+  }
+
+  .user-info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .user-info__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .user-info__label {
+    margin-left: 20px;
+  }
+
+  .user-info__input {
+    width: 100%;
+    margin: 0;
+    margin-left: 22px;
+    margin-right: 20px;
+  }
+}
