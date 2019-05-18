@@ -187,3 +187,208 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .photo-editor {
+    width: @tablet-width;
+  }
+
+  .photo-editor__text {
+    font-size: 18px;
+  }
+
+  .photo-editor__text--bottom {
+    width: 430px;
+  }
+
+  .photo-editor__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 72px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 33px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    background-color: @bg-blue;
+  }
+
+  .photo-editor__image {
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-editor__wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-editor__scale {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .photo-editor__scale-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-editor__scale-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 260px;
+    margin-left: 47px;
+    margin-bottom: 27px;
+    border-bottom: 1px solid @social-border;
+  }
+
+  .photo-editor__scale-icon {
+    display: block;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+
+    .photo-editor__svg-border {
+      fill: @contrast-color;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .photo-editor__scale-icon-first {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-editor__scale-icon-second {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-editor__scale-icon-third {
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-editor__scale-slider {
+    display: block;
+    width: 202px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-editor__scale-slider--main {
+    display: none;
+  }
+
+  .photo-editor__scale-line {
+    width: 202px;
+  }
+
+  .photo-editor__scale-bar {
+    position: absolute;
+    top: -5px;
+    left: 193px;
+    display: block;
+    width: 10px;
+    height: 11px;
+    background-color: @bg-blue;
+    border: 2px solid @contrast-color;
+    border-radius: 50%;
+  }
+
+  .photo-editor__scale-bar--active {
+    background-color: @contrast-color;
+  }
+
+  .photo-editor__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: @mobile-width;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 38px;
+    padding-left: 18px;
+    padding-right: 20px;
+    padding-bottom: 41px;
+    background-color: @bg-blue;
+  }
+
+  .photo-editor__post-button {
+    display: block;
+    width: 281px;
+    height: 55px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @contrast-color;
+    text-align: center;
+    text-decoration: none;
+    background-color: @bg-blue;
+    border: 3px solid @contrast-color;
+    border-radius: 25px;
+
+    &:hover {
+      color: @primary-color;
+      background-color: @contrast-color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .photo-editor__cancel-button {
+    display: block;
+    width: 281px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 12px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @social-border;
+    text-align: center;
+    text-decoration: none;
+    background-color: @bg-blue;
+    border: 3px solid @social-border;
+    border-radius: 25px;
+
+    &:hover {
+      color: @social-border-active;
+      border: 3px solid @social-border-active;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: @text-color;
+      border: 3px solid @text-color;
+      opacity: 0.3;
+    }
+  }
+}
