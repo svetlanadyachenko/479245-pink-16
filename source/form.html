@@ -115,9 +115,10 @@
         <h2 class="promo__title promo__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </section>
       <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
+        <h2 class="competition-form__title-min">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="competition-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
         <fieldset class="user-info">
-          <legend class="user-info__title--min">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</legend>
-          <legend class="user-info__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</legend>
+          <legend class="visually-hidden">Данные пользователя</legend>
           <div class="user-info__list">
             <p class="user-info__item">
               <label class="user-info__label" for="surname">Фамилия:</label>
@@ -136,32 +137,38 @@
         <div class="competition-form__wrapper">
           <fieldset class="progress">
             <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="progress__list">
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked>
-                <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked>
-                <label class="progress__label" for="suntan">Обгорел на пляже</label>
-              </li>
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
-                <label class="progress__label" for="norris">Видел Чака Норриса</label>
-              </li>
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
-                <label class="progress__label" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-                <label class="progress__label" for="tower">Удержал башню</label>
-              </li>
-              <li class="progress__item">
-                <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
-                <label class="progress__label" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
+            <div class="progress__list">
+              <div class="progress__list-container">
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                  <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
+                </div>
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked>
+                  <label class="progress__label" for="suntan">Обгорел на пляже</label>
+                </div>
+              </div>
+              <div class="progress__list-container">
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
+                  <label class="progress__label" for="norris">Видел Чака Норриса</label>
+                </div>
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                  <label class="progress__label" for="souvenir">Накупил сувениров</label>
+                </div>
+              </div>
+              <div class="progress__list-container">
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+                  <label class="progress__label" for="tower">Удержал башню</label>
+                </div>
+                <div class="progress__item">
+                  <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
+                  <label class="progress__label" for="hotel">Разгромил отель</label>
+                </div>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="contact-information">
             <legend class="contact-information__title">Контактная информация</legend>
@@ -204,6 +211,9 @@
           <input class="competition-form__button" type="submit" value="Отправить форму">
           <small class="competition-form__required-fields">
             <sup>*</sup> — Обязательные поля
+          </small>
+          <small class="competition-form__required-fields-big">
+            <sup>*</sup> — Обязательные для заполнения поля
           </small>
         </div>
       </form>

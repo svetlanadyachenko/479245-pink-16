@@ -129,7 +129,6 @@
     background-position: center;
     background-size: 20px 19px;
     background-color: @light-border-color;
-    z-index: 6;
   }
 
   .contact-information__item:nth-of-type(2)::after {
@@ -144,5 +143,35 @@
     background-position: center;
     background-size: 18px 13px;
     background-color: @light-border-color;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .contact-information {
+    width: 936px;
+  }
+
+  .contact-information__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 816px;
+    margin: 0 auto;
+  }
+
+  .contact-information__label {
+    margin-left: 28px;
+  }
+
+  .contact-information__input {
+    width: 371px;
+    margin: 0;
+  }
+
+  .contact-information__item::after {
+    left: 309px;
+  }
+
+  .contact-information__item:nth-of-type(2)::after {
+    left: 309px;
   }
 }

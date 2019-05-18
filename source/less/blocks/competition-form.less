@@ -2,6 +2,24 @@
   width: @mobile-width;
 }
 
+.competition-form__title {
+  display: none;
+}
+
+.competition-form__title-min {
+  display: block;
+  width: 275px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: @text-color;
+}
+
 .competition-form__button {
   display: block;
   width: 276px;
@@ -40,15 +58,8 @@
   }
 }
 
-.competition-form__required-fields sup {
-  position: absolute;
-  top: 0;
-  left: -3px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: right;
-  color: @contrast-color;
+.competition-form__required-fields-big {
+  display: none;
 }
 
 .competition-form__required-fields {
@@ -66,9 +77,40 @@
   color: @text-color;
 }
 
+.competition-form__required-fields sup {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: right;
+  color: @contrast-color;
+}
+
 @media (min-width: @tablet-width) {
   .competition-form {
     width: @tablet-width;
+  }
+
+  .competition-form__title {
+    display: block;
+    width: 490px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    padding: 0;
+    padding-bottom: 76px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: @text-color;
+  }
+
+  .competition-form__title-min {
+    display: none;
   }
 
   .competition-form__container {
@@ -96,5 +138,56 @@
   .competition-form__wrapper {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .competition-form {
+    width: @desktop-width;
+  }
+
+  .competition-form__title {
+    margin-top: 100px;
+    width: 752px;
+  }
+
+  .competition-form__title-min {
+    display: none;
+  }
+
+  .competition-form__container {
+    width: @desktop-width;
+    margin-top: 69px;
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+
+  .competition-form__required-fields {
+    display: none;
+  }
+
+  .competition-form__required-fields-big {
+    position: relative;
+    display: block;
+    width: 315px;
+    margin: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: @text-color;
+  }
+
+  .competition-form__required-fields-big sup {
+    position: absolute;
+    top: 0;
+    left: -3px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    color: @contrast-color;
   }
 }

@@ -28,9 +28,10 @@
 }
 
 .progress__list {
-  .list-reset();
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   margin-top: 52px;
 }
 
@@ -50,7 +51,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 90px;
+  padding-left: 60px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -65,7 +66,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 22px;
+  left: 0;
   display: block;
   width: 35px;
   height: 35px;
@@ -125,5 +126,30 @@
   .progress__item {
     margin-bottom: 63px;
     margin-left: 68px;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .progress {
+    width: 936px;
+    margin: 0 auto;
+    margin-top: 69px;
+  }
+
+  .progress__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .progress__list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .progress__item {
+    margin-bottom: 63px;
+    margin-left: 28px;
   }
 }
