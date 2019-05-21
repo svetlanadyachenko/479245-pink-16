@@ -30,19 +30,19 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header--closed page-header--nojs">
         <section class="main-header">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo" href="#" aria-label="Логотип приложения Pink">
             <picture>
               <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
             </picture>
           </a>
-          <button class="main-header__toggle-close" type="button">
+          <button class="main-header__toggle-close" type="button" aria-label="Кнопка: закрыть меню">
             <svg class="main-header__toggle-close-icon" width="23.867" height="23.867">
               <use xlink:href="#toggle-close"></use>
             </svg>
           </button>
-          <button class="main-header__toggle-open" type="button">
+          <button class="main-header__toggle-open" type="button" aria-label="Кнопка: открыть меню">
             <svg class="main-header__toggle-open-icon" width="49.945px" height="24.007px">
               <use xlink:href="#toggle-open"></use>
             </svg>
@@ -131,25 +131,51 @@
       </section>
       <section class="reviews">
         <div class="reviews__icon-quotes"></div>
-        <div class="reviews__icon-review-arrow-left">
+        <div class="reviews__icon-review-arrow-left" aria-label="Листать слайды влево">
           <svg width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" fill="#283645">
             <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
           </svg>
         </div>
-        <div class="reviews__icon-review-arrow-right">
+        <div class="reviews__icon-review-arrow-right" aria-label="Листать слайды вправо">
           <svg width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" fill="#283645">
             <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
           </svg>
         </div>
-        <div class="reviews__user-container">
-          <h2 class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</h2>
-          <p class="reviews__user">Николай Петров</p>
-          <p class="reviews__user-info">25 лет, водитель трамвая</p>
+        <div class="reviews__first">
+          <div class="reviews__user-container">
+            <h2 class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</h2>
+            <p class="reviews__user">Николай Петров</p>
+            <p class="reviews__user-info">25 лет, водитель трамвая</p>
+          </div>
+          <div class="reviews__slider">
+            <button class="reviews__slider-toggle reviews__slider-toggle--active" type="button" aria-label="Первый слайд отзывов"></button>
+            <button class="reviews__slider-toggle" type="button" aria-label="Второй слайд отзывов"></button>
+            <button class="reviews__slider-toggle" type="button" aria-label="Третий слайд отзывов"></button>
+          </div>
         </div>
-        <div class="reviews__slider">
-          <button class="reviews__slider-toggle reviews__slider-toggle--active" type="button"></button>
-          <button class="reviews__slider-toggle" type="button"></button>
-          <button class="reviews__slider-toggle" type="button"></button>
+        <div class="reviews__second">
+          <div class="reviews__user-container">
+            <h2 class="reviews__text">«Прекрасное приложение для обработки фотографий»</h2>
+            <p class="reviews__user">Алексей Потапов</p>
+            <p class="reviews__user-info">30 лет, продавец</p>
+          </div>
+          <div class="reviews__slider">
+            <button class="reviews__slider-toggle" type="button" aria-label="Первый слайд отзывов"></button>
+            <button class="reviews__slider-toggle reviews__slider-toggle--active" type="button" aria-label="Второй слайд отзывов"></button>
+            <button class="reviews__slider-toggle" type="button" aria-label="Третий слайд отзывов"></button>
+          </div>
+        </div>
+        <div class="reviews__third">
+          <div class="reviews__user-container">
+            <h2 class="reviews__text">«С этим приложением любая скучная фотография станет насыщенной и интересной»</h2>
+            <p class="reviews__user">Виталий Крюков</p>
+            <p class="reviews__user-info">19 лет, студент</p>
+          </div>
+          <div class="reviews__slider">
+            <button class="reviews__slider-toggle" type="button" aria-label="Первый слайд отзывов"></button>
+            <button class="reviews__slider-toggle" type="button" aria-label="Второй слайд отзывов"></button>
+            <button class="reviews__slider-toggle  reviews__slider-toggle--active" type="button" aria-label="Третий слайд отзывов"></button>
+          </div>
         </div>
       </section>
       <section class="pink-store">
@@ -212,9 +238,9 @@
           </tr>
         </table>
         <p class="pink-store__slider">
-          <button class="pink-store__slider-toggle" type="button"></button>
-          <button class="pink-store__slider-toggle pink-store__slider-toggle--active" type="button"></button>
-          <button class="pink-store__slider-toggle" type="button"></button>
+          <button class="pink-store__slider-toggle" type="button" aria-label="Первый тариф: база"></button>
+          <button class="pink-store__slider-toggle pink-store__slider-toggle--active" type="button" aria-label="Второй тариф: стандарт"></button>
+          <button class="pink-store__slider-toggle" type="button" aria-label="Третий тариф: анлим"></button>
         </p>
       </section>
       <section class="pink-contacts">
@@ -235,46 +261,46 @@
         </div>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться?</h2>
         <span class="map__marker"></span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558346424822!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
-          </picture>
+      <a class="page-footer__logo" href="#" aria-label="Логотип приложения Pink">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+        </picture>
+      </a>
+      <section class="social-nav">
+        <ul class="social-nav__list">
+          <li class="social-nav__item">
+            <a class="social-nav__link social-nav__link--twitter" href="#" aria-label="Приложение Pink в Twitter">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a class="social-nav__link social-nav__link--facebook" href="#" aria-label="Приложение Pink на Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a class="social-nav__link social-nav__link--youtube" href="#" aria-label="Приложение Pink на YouTube">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="developer">
+        <p class="developer__text">Разработано</p>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+          <svg class="developer__image" role="img" width="26.943px" height="34.09px">
+            <use xlink:href="#developer"></use>
+          </svg>
         </a>
-        <section class="social-nav">
-          <ul class="social-nav__list">
-            <li class="social-nav__item">
-              <a class="social-nav__link social-nav__link--twitter" href="#" aria-label="Приложение Pink в Twitter">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="social-nav__item">
-              <a class="social-nav__link social-nav__link--facebook" href="#" aria-label="Приложение Pink на Facebook">
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li class="social-nav__item">
-              <a class="social-nav__link social-nav__link--youtube" href="#" aria-label="Приложение Pink на YouTube">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="developer">
-          <p class="developer__text">Разработано</p>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
-            <svg class="developer__image" role="img" width="26.943px" height="34.09px">
-              <use xlink:href="#developer"></use>
-            </svg>
-          </a>
-        </section>
-      </div>
+      </section>
     </footer>
     <script>
       var navMain = document.querySelector(".page-header__wrapper");

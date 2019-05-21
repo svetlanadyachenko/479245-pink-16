@@ -2,7 +2,7 @@
   display: block;
   width: @mobile-width;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 22px;
   padding: 0;
   border: none;
   background-color: @bg-blue;
@@ -30,18 +30,20 @@
   .list-reset();
   display: flex;
   flex-direction: column;
-  margin-top: 52px;
+  margin-top: 38px;
 }
 
 .attachment__item {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 63px;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
 }
 
 .attachment__input {
-  display: none;
+  .visually-hidden();
 }
 
 .attachment__label {
@@ -63,8 +65,8 @@
 .attachment__input--radio + .attachment__label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 22px;
+  top: -3px;
+  left: 20px;
   display: block;
   width: 35px;
   height: 35px;
@@ -82,6 +84,15 @@
   border: 2px solid @contrast-color;
 }
 
+.attachment__input--radio:focus + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:disabled + .attachment__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
 .attachment__input--radio:checked + .attachment__label::before {
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
@@ -96,12 +107,21 @@
   border: 2px solid @contrast-color;
 }
 
+.attachment__input--radio:checked:focus + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:checked:disabled + .attachment__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .attachment {
     width: 616px;
     margin: 0 auto;
-    margin-top: 70px;
     padding: 0;
+    padding-bottom: 15px;
     border: 2px solid @light-border-color;
     background-color: @primary-color;
   }
@@ -122,8 +142,12 @@
     .list-reset();
     display: flex;
     flex-direction: column;
-    margin-top: 52px;
-    margin-left: 55px;
+    margin-top: 42px;
+    margin-left: 38px;
+  }
+
+  .attachment__label {
+    padding-left: 80px;
   }
 }
 
@@ -131,7 +155,11 @@
   .attachment {
     width: 431px;
     margin: 0;
-    margin-top: -280px;
-    margin-left: 640px;
+    margin-top: -365px;
+    margin-left: 636px;
+  }
+
+  .attachment__list {
+    margin-left: 52px;
   }
 }

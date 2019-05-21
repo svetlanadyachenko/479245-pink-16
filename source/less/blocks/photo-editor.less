@@ -40,17 +40,8 @@
   height: 374px;
 }
 
-.photo-editor__scale {
-  display: flex;
-  flex-direction: column;
-  justify-content: justify-content;
-  margin: 0;
-  padding: 0;
-  background-color: @bg-blue;
-  border-bottom: 1px solid @social-border;
-}
-
 .photo-editor__scale-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +51,9 @@
   padding: 0;
   padding-left: 55px;
   padding-right: 64px;
+  padding-bottom: 73px;
   background-color: @bg-blue;
+  border-bottom: 1px solid @social-border;
 }
 
 .photo-editor__scale-icon {
@@ -123,7 +116,10 @@
   display: none;
 }
 
-.photo-editor__scale-slider--main {
+.photo-editor__scale-slider--active {
+  position: absolute;
+  top: 46px;
+  left: 38px;
   display: block;
   width: 240px;
   margin: 0 auto;
@@ -166,7 +162,7 @@
   width: @mobile-width;
   margin: 0;
   box-sizing: border-box;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-left: 18px;
   padding-right: 20px;
   padding-bottom: 41px;
@@ -283,23 +279,15 @@
     padding: 0;
   }
 
-  .photo-editor__scale {
+  .photo-editor__scale-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 275px;
     margin: 0;
     margin-top: 9px;
     padding: 0;
     border-bottom: none;
-  }
-
-  .photo-editor__scale-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 275px;
-    margin: 0;
-    padding: 0;
   }
 
   .photo-editor__scale-container {
@@ -312,7 +300,7 @@
     box-sizing: border-box;
     padding-left: 3px;
     padding-right: 17px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
     border-bottom: 1px solid @social-border;
   }
 
@@ -353,8 +341,12 @@
     padding: 0;
   }
 
-  .photo-editor__scale-slider--main {
-    display: none;
+  .photo-editor__scale-slider--active {
+    position: static;
+    display: block;
+    width: 202px;
+    margin: 0;
+    padding: 0;
   }
 
   .photo-editor__scale-line {
@@ -401,6 +393,7 @@
   .photo-editor {
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .photo-editor__text {

@@ -3,12 +3,14 @@
   display: block;
   width: @mobile-width;
   height: 645px;
-  margin-top: -447px;
+  margin-top: -450px;
   background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 445px, 0 0;
+  background-position: 0 447px, 0 0;
   background-size: 320px auto, 320px auto;
   background-color: @bg-blue;
+  overflow: hidden;
+  z-index: 1;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -26,21 +28,27 @@
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 2;
+}
+
+.map iframe {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  width: @mobile-width;
+  height: 200px;
+  z-index: 3;
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
   .map {
-    position: relative;
-    z-index: 1;
-    display: block;
     width: @tablet-width;
     height: 721px;
     margin-top: -348px;
     background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
     background-position: 0 346px, -20px 0;
     background-size: 660px auto, 700px auto;
-    background-color: @bg-blue;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -49,15 +57,14 @@
   }
 
   .map__marker {
-    position: absolute;
     top: 541px;
     left: 311px;
-    display: block;
-    width: 36px;
-    height: 35px;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  }
+
+  .map iframe {
+    top: 348px;
+    width: @tablet-width;
+    height: 373px;
   }
 }
 
@@ -67,10 +74,8 @@
     height: 780px;
     margin-top: -277px;
     background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
     background-position: 0 276px, 0 0;
     background-size: 1200px auto, 1200px auto;
-    background-color: @bg-blue;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
@@ -79,14 +84,13 @@
   }
 
   .map__marker {
-    position: absolute;
     top: 540px;
     left: 583px;
-    display: block;
-    width: 36px;
-    height: 35px;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  }
+
+  .map iframe {
+    top: 277px;
+    width: @desktop-width;
+    height: 503px;
   }
 }

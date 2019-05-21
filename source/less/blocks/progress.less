@@ -2,7 +2,7 @@
   display: block;
   width: @mobile-width;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 22px;
   box-sizing: border-box;
   padding: 0;
   border: none;
@@ -32,18 +32,18 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-top: 52px;
+  margin-top: 42px;
 }
 
 .progress__item {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 63px;
+  margin-bottom: 52px;
 }
 
 .progress__input {
-  display: none;
+  .visually-hidden();
 }
 
 .progress__label {
@@ -51,7 +51,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 60px;
+  padding-left: 90px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -65,8 +65,8 @@
 .progress__input--checkbox + .progress__label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: 20px;
   display: block;
   width: 35px;
   height: 35px;
@@ -84,6 +84,15 @@
   border: 2px solid @contrast-color;
 }
 
+.progress__input--checkbox:focus + .progress__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.progress__input--checkbox:disabled + .progress__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
 .progress__input--checkbox:checked + .progress__label::before {
   background-image: url("../img/input-icon-yes.svg");
   background-repeat: no-repeat;
@@ -98,11 +107,20 @@
   border: 2px solid @contrast-color;
 }
 
+.progress__input--checkbox:checked:focus + .progress__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.progress__input--checkbox:checked:disabled + .progress__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .progress {
     width: 616px;
     margin: 0 auto;
-    margin-top: 69px;
+    margin-top: 52px;
     padding: 0;
     border: 2px solid @light-border-color;
     background-color: @primary-color;
@@ -124,8 +142,12 @@
   }
 
   .progress__item {
-    margin-bottom: 63px;
-    margin-left: 68px;
+    margin-bottom: 52px;
+    margin-left: 37px;
+  }
+
+  .progress__label {
+    padding-left: 78px;
   }
 }
 
@@ -133,12 +155,19 @@
   .progress {
     width: 936px;
     margin: 0 auto;
-    margin-top: 69px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding-top: 44px;
+    padding-left: 9px;
+    padding-right: 57px;
+    padding-bottom: 0;
   }
 
   .progress__list {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 
   .progress__list-container {
@@ -146,10 +175,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
 
   .progress__item {
-    margin-bottom: 63px;
+    margin-bottom: 50px;
     margin-left: 28px;
+  }
+
+  .progress__item:nth-of-type(2) {
+    margin-bottom: 60px;
   }
 }
