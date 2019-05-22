@@ -12,50 +12,48 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
+    <header class="page-header modal-closed modal-nojs">
       <!-- //class="main-header__toggle-close" - "Закрыть меню"
       class="main-header__toggle-open" - "Открыть меню"
       class="modal-closed" - "Меню закрыто"
       class="modal-opened" - "Меню открыто"
       class="modal-nojs" - "Меню без JS" -->
-      <div class="page-header__wrapper modal-closed modal-nojs">
-        <section class="main-header">
-          <h2 class="visually-hidden">Главное меню</h2>
-          <a class="main-header__logo" href="#" aria-label="Логотип приложения Pink">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
-            </picture>
-          </a>
-          <button class="main-header__toggle-close" type="button" aria-label="Кнопка: закрыть меню">
-            <svg class="main-header__toggle-close-icon" width="26" height="24">
-              <use xlink:href="#icon-menu-cross"></use>
-            </svg>
-          </button>
-          <button class="main-header__toggle-open" type="button" aria-label="Кнопка: открыть меню">
-            <svg class="main-header__toggle-open-icon" width="49.945px" height="24.007px">
-              <use xlink:href="#icon-menu-burger"></use>
-            </svg>
-          </button>
-        </section>
-        <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--last" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <section class="main-header">
+        <h2 class="visually-hidden">Главное меню</h2>
+        <a class="main-header__logo" href="#" aria-label="Логотип приложения Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
+          </picture>
+        </a>
+        <button class="main-header__toggle-close" type="button" aria-label="Кнопка: закрыть меню">
+          <svg class="main-header__toggle-close-icon" width="26" height="24">
+            <use xlink:href="#icon-menu-cross"></use>
+          </svg>
+        </button>
+        <button class="main-header__toggle-open" type="button" aria-label="Кнопка: открыть меню">
+          <svg class="main-header__toggle-open-icon" width="49.945px" height="24.007px">
+            <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+        </button>
+      </section>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--last" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение Pink для раскрашивания серых будней в розовый цвет</h1>

@@ -1,4 +1,4 @@
-var navMain = document.querySelector(".page-header__wrapper");
+var navMain = document.querySelector(".page-header");
 var navToggleClose = document.querySelector(".main-header__toggle-close");
 var navToggleOpen = document.querySelector(".main-header__toggle-open");
 
