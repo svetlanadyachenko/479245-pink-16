@@ -13,6 +13,11 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
+      <!-- class="main-header__toggle-close" - "Закрыть меню"
+      class="main-header__toggle-open" - "Открыть меню"
+      class="page-header--closed" - "Меню закрыто"
+      class="page-header--opened" - "Меню открыто"
+      class="page-header--nojs" - "Меню без JS" -->
       <div class="page-header__wrapper page-header--closed page-header--nojs">
         <section class="main-header">
           <h2 class="visually-hidden">Главное меню</h2>
@@ -293,7 +298,7 @@
           </section>
         </div>
       </section>
-      <section class="photo-editor">
+      <form class="photo-editor" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Редактор изображений</h2>
         <p class="photo-editor__text">Затмите их всех!</p>
         <p class="photo-editor__text photo-editor__text--bottom">Выкладывайте все, что накопилось в телефоне!</p>
@@ -354,12 +359,12 @@
               </div>
             </div>
             <div class="photo-editor__buttons">
-              <button type="button" class="photo-editor__post-button">Запостить</button>
-              <button type="button" class="photo-editor__cancel-button">Отмена</button>
+              <button type="submit" class="photo-editor__post-button">Запостить</button>
+              <button type="reset" class="photo-editor__cancel-button">Отмена</button>
             </div>
           </div>
         </div>
-      </section>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html" aria-label="Ссылка на главную страницу Pink">

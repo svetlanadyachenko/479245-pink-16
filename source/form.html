@@ -13,6 +13,11 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
+      <!-- class="main-header__toggle-close" - "Закрыть меню"
+      class="main-header__toggle-open" - "Открыть меню"
+      class="page-header--closed" - "Меню закрыто"
+      class="page-header--opened" - "Меню открыто"
+      class="page-header--nojs" - "Меню без JS" -->
       <div class="page-header__wrapper page-header--closed page-header--nojs">
         <section class="main-header">
           <h2 class="visually-hidden">Главное меню</h2>
@@ -162,12 +167,10 @@
               <p class="contact-information__item">
                 <label class="contact-information__label" for="phone-number">Номер телефона</label>
                 <input class="contact-information__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
-                <span class="contact-information__phone-image"></span>
               </p>
               <p class="contact-information__item">
                 <label class="contact-information__label" for="mail">Адрес почты</label>
                 <input class="contact-information__input" type="email" name="mail" id="mail" placeholder="Введите почту *" required="">
-                <span class="contact-information__mail-image"></span>
               </p>
             </div>
           </fieldset>
