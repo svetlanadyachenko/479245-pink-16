@@ -1,0 +1,409 @@
+.pink-store {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: @mobile-width;
+  margin: 0;
+  padding: 0;
+  padding-top: 132px;
+  padding-bottom: 46px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -27px;
+  background-color: @bg-blue;
+}
+
+.pink-store__list {
+  display: table;
+  width: @mobile-width;
+  margin: 0;
+  padding: 0;
+  background-color: @bg-blue;
+  border-collapse: collapse;
+}
+
+.pink-store__list td {
+  border: 2px solid #e5e5e5;
+  border-collapse: collapse;
+}
+
+.pink-store__tariff {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  background-color: @text-color;
+}
+
+.pink-store__tariff--block {
+  position: relative;
+  width: 276px;
+  z-index: 3;
+}
+
+.pink-store__tariff-title {
+  display: none;
+}
+
+.pink-store__tariff-price {
+  display: none;
+}
+
+.pink-store__tariff-title--block {
+  display: block;
+  margin: 0;
+  margin-top: -6px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @primary-color;
+}
+
+.pink-store__tariff-price--block {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 33px;
+  text-align: center;
+  color: @primary-color;
+}
+
+.pink-store__mark {
+  background-color: @primary-color;
+}
+
+.pink-store__green-mark-text {
+  display: block;
+  width: 276px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 19px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: @text-color;
+  text-transform: uppercase;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+  background-position: 230px center;
+}
+
+.pink-store__red-mark-text {
+  display: block;
+  width: 276px;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 19px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: @text-color;
+  text-transform: uppercase;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 26px;
+  background-position: 230px center;
+}
+
+.pink-store__slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+.pink-store__slider-toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.3;
+  background-color: @text-color;
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.pink-store__slider-toggle--active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: @primary-color;
+  border: 3px solid @text-color;
+
+  &:hover {
+    opacity: 1;
+    background-color: @primary-color;
+    border: 3px solid @text-color;
+  }
+
+  &:active {
+    opacity: 1;
+    background-color: @primary-color;
+    border: 3px solid @text-color;
+  }
+}
+
+.pink-store__flag {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 73px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 74px 73px;
+  z-index: 4;
+}
+
+.pink-store__flag-text {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  display: block;
+  width: 24px;
+  height: 26px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: @primary-color;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-45deg);
+  z-index: 5;
+}
+
+@media (max-width: 659px) {
+  .pink-store__tariff-composition {
+    .visually-hidden();
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .pink-store {
+    width: @tablet-width;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    background-position: 0 -21px;
+  }
+
+  .pink-store__list {
+    width: 618px;
+    margin: 0 auto;
+  }
+
+  .pink-store__tariff {
+    width: 152px;
+    padding-top: 17px;
+    padding-bottom: 8px;
+  }
+
+  .pink-store__tariff-title {
+    display: block;
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: -2px;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: @primary-color;
+  }
+
+  .pink-store__tariff-price {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    color: @primary-color;
+  }
+
+  .pink-store__tariff-composition {
+    width: 155px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: @text-color;
+    text-transform: none;
+    background-color: @primary-color;
+  }
+
+  .pink-store__mark {
+    width: 152px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pink-store__green-mark-text {
+    display: none;
+  }
+
+  .pink-store__red-mark-text {
+    display: none;
+  }
+
+  .pink-store__green-mark {
+    display: block;
+    width: 31px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 61px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: 31px 21px;
+    background-position: center;
+  }
+
+  .pink-store__red-mark {
+    display: block;
+    width: 27px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    padding-left: 63px;
+    padding-right: 62px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: 27px 26px;
+    background-position: center;
+  }
+
+  .pink-store__slider {
+    display: none;
+  }
+
+  .pink-store__flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 61px 61px;
+    z-index: 4;
+  }
+
+  .pink-store__flag-text {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    display: block;
+    width: 26px;
+    height: 27px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: @primary-color;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(-45deg);
+    z-index: 5;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .pink-store {
+    width: @desktop-width;
+    margin-top: 42px;
+    padding-top: 145px;
+    padding-bottom: 93px;
+    background-position: 0 0;
+  }
+
+  .pink-store__list {
+    width: 940px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .pink-store__tariff {
+    width: 233px;
+    padding-top: 23px;
+    padding-bottom: 21px;
+  }
+
+  .pink-store__tariff-title {
+    font-size: 18px;
+    margin-bottom: -2px;
+  }
+
+  .pink-store__tariff-price {
+    font-size: 24px;
+  }
+
+  .pink-store__tariff-composition {
+    width: 235px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 21px;
+    font-size: 18px;
+  }
+
+  .pink-store__mark {
+    width: 233px;
+  }
+
+  .pink-store__green-mark {
+    padding-left: 100px;
+    padding-right: 102px;
+  }
+
+  .pink-store__red-mark {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+}

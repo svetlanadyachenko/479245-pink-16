@@ -1,0 +1,165 @@
+.attachment {
+  display: block;
+  width: @mobile-width;
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+  border: none;
+  background-color: @bg-blue;
+}
+
+.attachment__title {
+  display: block;
+  width: @mobile-width;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 41px;
+  padding-left: 48px;
+  padding-right: 51px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: @contrast-color;
+  background-color: @bg-blue;
+}
+
+.attachment__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+}
+
+.attachment__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+}
+
+.attachment__input {
+  .visually-hidden();
+}
+
+.attachment__label {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 90px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  color: @text-color;
+  user-select: none;
+  cursor: pointer;
+}
+
+.attachment__input--radio + .attachment__label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 20px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: @primary-color;
+  border: 2px solid @light-border-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.attachment__input--radio:hover + .attachment__label::before {
+  border: 2px solid @text-color;
+}
+
+.attachment__input--radio:active + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:focus + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:disabled + .attachment__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
+.attachment__input--radio:checked + .attachment__label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.attachment__input--radio:checked:hover + .attachment__label::before {
+  border: 2px solid @text-color;
+}
+
+.attachment__input--radio:checked:active + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:checked:focus + .attachment__label::before {
+  border: 2px solid @contrast-color;
+}
+
+.attachment__input--radio:checked:disabled + .attachment__label::before {
+  border: 2px solid @light-border-color;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .attachment {
+    width: 616px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 15px;
+    border: 2px solid @light-border-color;
+    background-color: @primary-color;
+  }
+
+  .attachment__title {
+    display: block;
+    width: 330px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+    background-color: @primary-color;
+  }
+
+  .attachment__list {
+    .list-reset();
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    margin-left: 38px;
+  }
+
+  .attachment__label {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: @min-desktop-width) {
+  .attachment {
+    width: 431px;
+    margin: 0;
+    margin-top: -365px;
+    margin-left: 636px;
+  }
+
+  .attachment__list {
+    margin-left: 52px;
+  }
+}

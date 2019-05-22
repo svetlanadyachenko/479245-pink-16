@@ -14,6 +14,7 @@
 }
 
 .main-header__logo {
+  display: block;
   color: @primary-color;
 }
 
@@ -60,7 +61,6 @@
   height: 24px;
   background-color: @bg-color;
   border: none;
-  outline: none;
 }
 
 .main-header__toggle-close-icon {
@@ -81,7 +81,6 @@
   height: 24px;
   background-color: transparent;
   border: none;
-  outline: none;
 }
 
 .main-header__toggle-open-icon {
@@ -168,7 +167,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @min-desktop-width) {
   .main-header {
     width: @desktop-width;
     padding-top: 27px;

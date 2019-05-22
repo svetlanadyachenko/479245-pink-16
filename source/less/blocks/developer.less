@@ -4,6 +4,7 @@
   align-items: center;
   width: 132px;
   margin: 0 auto;
+  margin-top: 32px;
 }
 
 .developer__text {
@@ -26,8 +27,10 @@
 }
 
 .developer__image {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 47px;
+  margin-top: -5px;
+  margin-left: -5px;
   fill: @contrast-color;
 
   &:hover {
@@ -46,13 +49,15 @@
     align-items: center;
     width: 130px;
     margin: 0;
+    margin-top: 38px;
     padding: 0;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @min-desktop-width) {
   .developer {
     width: 153px;
+    margin-top: 4px;
   }
 
   .developer__text {
