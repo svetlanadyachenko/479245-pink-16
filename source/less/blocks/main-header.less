@@ -1,6 +1,6 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: @mobile-width;
   margin-bottom: 1px;
@@ -15,6 +15,8 @@
 
 .main-header__logo {
   display: block;
+  width: 75px;
+  height: 23px;
   color: @primary-color;
 }
 
@@ -59,7 +61,10 @@
   display: none;
   width: 24px;
   height: 24px;
-  background-color: @bg-color;
+  margin: 0;
+  padding: 0;
+  margin-left: 176px;
+  background-color: transparent;
   border: none;
 }
 
@@ -79,6 +84,9 @@
   display: none;
   width: 50px;
   height: 24px;
+  margin: 0;
+  padding: 0;
+  margin-left: 150px;
   background-color: transparent;
   border: none;
 }
@@ -101,6 +109,11 @@
     box-sizing: border-box;
     padding-top: 26px;
     padding-bottom: 42px;
+  }
+
+  .main-header__logo {
+    width: 147px;
+    height: 40px;
   }
 
   .main-header__logo-image {
@@ -159,11 +172,17 @@
   }
 
   .main-header__toggle-close {
+    margin: 0;
+    padding: 0;
     margin-top: 15px;
+    margin-left: 446px;
   }
 
   .main-header__toggle-open {
+    margin: 0;
+    padding: 0;
     margin-top: 15px;
+    margin-left: 419px;
   }
 }
 
