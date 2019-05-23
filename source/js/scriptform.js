@@ -32,14 +32,17 @@ sentForm.addEventListener("click", function () {
     if (mistake.classList.contains("mistake-window")) {
       mistake.classList.remove("mistake-window");
       mistake.classList.add("mistake-window--show");
+      sentWindow.classList.add("application-sent");
     }
   }
 });
 
 sentForm.addEventListener("click", function () {
-  if (sentWindow.classList.contains("application-sent")) {
-    sentWindow.classList.remove("application-sent");
-    sentWindow.classList.add("application-sent--show");
+  if (surname.value || name.value || mail.value) {
+    if (sentWindow.classList.contains("application-sent")) {
+      sentWindow.classList.remove("application-sent");
+      sentWindow.classList.add("application-sent--show");
+    }
   }
 });
 

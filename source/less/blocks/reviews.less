@@ -72,6 +72,7 @@
   background-color: @text-color;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -154,7 +155,8 @@
     padding: 0;
   }
 
-  .reviews__icon-quotes {
+  .reviews::before {
+    content: "";
     position: absolute;
     top: -97px;
     left: 562px;
@@ -174,6 +176,7 @@
     width: 22px;
     height: 41px;
     opacity: 0.3;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.6;
@@ -192,6 +195,7 @@
     width: 22px;
     height: 41px;
     opacity: 0.3;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.6;
