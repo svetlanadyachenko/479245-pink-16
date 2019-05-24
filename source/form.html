@@ -106,56 +106,53 @@
       <form class="competition-form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="competition-form__title-min">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         <h2 class="competition-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-        <fieldset class="user-info">
-          <legend class="visually-hidden">Данные пользователя</legend>
-          <div class="user-info__list">
-            <p class="user-info__item">
-              <label class="user-info__label" for="surname">Фамилия:</label>
-              <input class="user-info__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required="">
-            </p>
-            <p class="user-info__item">
-              <label class="user-info__label" for="name">Имя:</label>
-              <input class="user-info__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required="">
-            </p>
-            <p class="user-info__item">
-              <label class="user-info__label" for="patronymic">Отчество:</label>
-              <input class="user-info__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-            </p>
-          </div>
-        </fieldset>
-        <div class="competition-form__wrapper">
+        <!-- <div class="competition-form__top-container"> -->
+          <fieldset class="user-info">
+            <legend class="visually-hidden">Данные пользователя</legend>
+            <div class="user-info__list">
+              <p class="user-info__item">
+                <label class="user-info__label" for="surname">Фамилия:</label>
+                <input class="user-info__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required="">
+              </p>
+              <p class="user-info__item">
+                <label class="user-info__label" for="name">Имя:</label>
+                <input class="user-info__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required="">
+              </p>
+              <p class="user-info__item">
+                <label class="user-info__label" for="patronymic">Отчество:</label>
+                <input class="user-info__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+          </fieldset>
+
+        <!-- </div> -->
+        <!-- <div class="competition-form__wrapper"> -->
           <fieldset class="progress">
             <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
             <div class="progress__list">
-              <div class="progress__list-container">
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked="">
-                  <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
-                </div>
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked="">
-                  <label class="progress__label" for="suntan">Обгорел на пляже</label>
-                </div>
+              <div class="progress__item progress__item--selfie">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="selfie" id="selfie" checked="">
+                <label class="progress__label" for="selfie">Сделал селфи с акулой</label>
               </div>
-              <div class="progress__list-container">
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
-                  <label class="progress__label" for="norris">Видел Чака Норриса</label>
-                </div>
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
-                  <label class="progress__label" for="souvenir">Накупил сувениров</label>
-                </div>
+              <div class="progress__item progress__item--suntan">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="suntan" id="suntan" checked="">
+                <label class="progress__label" for="suntan">Обгорел на пляже</label>
               </div>
-              <div class="progress__list-container">
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked="">
-                  <label class="progress__label" for="tower">Удержал башню</label>
-                </div>
-                <div class="progress__item">
-                  <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
-                  <label class="progress__label" for="hotel">Разгромил отель</label>
-                </div>
+              <div class="progress__item progress__item--norris">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="norris" id="norris">
+                <label class="progress__label" for="norris">Видел Чака Норриса</label>
+              </div>
+              <div class="progress__item progress__item--souvenir">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label class="progress__label" for="souvenir">Накупил сувениров</label>
+              </div>
+              <div class="progress__item progress__item--tower">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="tower" id="tower" checked="">
+                <label class="progress__label" for="tower">Удержал башню</label>
+              </div>
+              <div class="progress__item progress__item--hotel">
+                <input class="progress__input progress__input--checkbox" type="checkbox" name="hotel" id="hotel">
+                <label class="progress__label" for="hotel">Разгромил отель</label>
               </div>
             </div>
           </fieldset>
@@ -189,7 +186,7 @@
               </li>
             </ul>
           </fieldset>
-        </div>
+        <!-- </div> -->
         <fieldset class="emotions">
           <legend class="emotions__title">Опишите свои эмоции</legend>
           <textarea class="emotions__text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

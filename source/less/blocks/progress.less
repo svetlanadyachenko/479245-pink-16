@@ -124,6 +124,7 @@
     padding: 0;
     border: 2px solid @light-border-color;
     background-color: @primary-color;
+    order: 1;
   }
 
   .progress__title {
@@ -157,34 +158,56 @@
     margin: 0 auto;
     margin-top: 50px;
     box-sizing: border-box;
-    padding-top: 44px;
-    padding-left: 9px;
-    padding-right: 57px;
-    padding-bottom: 0;
+    padding-top: 45px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 16px;
   }
 
   .progress__list {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-  }
-
-  .progress__list-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
+    width: 816px;
     margin: 0;
     padding: 0;
   }
 
   .progress__item {
-    margin-bottom: 50px;
-    margin-left: 28px;
+    width: 258px;
+    margin: 0;
+    margin-bottom: 47px;
+    margin-right: 45px;
+    padding: 0;
   }
 
-  .progress__item:nth-of-type(2) {
-    margin-bottom: 60px;
+  .progress__item--tower,
+  .progress__item--hotel {
+    width: 210px;
+    margin-right: 0;
+  }
+
+  .progress__item--souvenir {
+    order: 1;
+  }
+
+  .progress__item--suntan {
+    order: 1;
+  }
+
+  .progress__item--hotel {
+    order: 1;
+  }
+
+  .progress__label {
+    margin: 0;
+    padding: 0;
+    padding-left: 58px;
+  }
+
+  .progress__input--checkbox + .progress__label::before {
+    left: 0;
   }
 }
