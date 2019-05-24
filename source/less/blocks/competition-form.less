@@ -24,6 +24,12 @@
   color: @text-color;
 }
 
+.competition-form__top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .competition-form__button {
   display: block;
   width: 276px;
@@ -155,6 +161,7 @@
 
   .competition-form__title {
     margin-top: 90px;
+    padding-bottom: 66px;
     width: 760px;
   }
 
@@ -164,9 +171,12 @@
 
   .competition-form__top-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: @desktop-width;
+    flex-wrap: wrap;
+    width: 936px;
+    margin: 0 auto;
   }
 
   .competition-form__container {
