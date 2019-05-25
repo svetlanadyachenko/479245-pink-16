@@ -4,18 +4,21 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   min-width: 320px;
   margin: 0;
@@ -27,10 +30,12 @@ body {
   color: #283645;
   background-color: #ffffff;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -39,14 +44,16 @@ img {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  /* -webkit-clip-path: inset(100%); */
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .advantages {
   background-color: #ffffff;
 }
+
 .advantages__text {
   display: block;
   margin: 0;
